@@ -45,12 +45,12 @@ function SupportCause() {
 
     {
       id: 4,
-      title: "Disaster Relief Fund",
+      title: "Animal Welfare Fund",
       image: "/images/campaigns/disaster.jpg",
       raised: 590000,
       goal: 700000,
       donors: 183,
-      category: "Disaster Response",
+      category: "Animal Welfare",
     },
   ];
 
