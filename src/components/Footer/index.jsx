@@ -470,7 +470,7 @@ function Footer() {
                 </a>
 
                 <a
-                  href="mailto:info@amisankalp.org"
+                  href="mailto:amisankalp2026@gmail.com"
                   className="
                     flex
                     items-start
@@ -491,7 +491,7 @@ function Footer() {
                   />
 
                   <span>
-                    info@amisankalp.org
+                    amisankalp2026@gmail.com
                   </span>
                 </a>
 

@@ -287,7 +287,7 @@ function Header() {
                             <Mail size={13} />
 
                             <span>
-                                info@amisankalp.org
+                                amisankalp2026@gmail.com
                             </span>
                         </a>
 
@@ -1017,7 +1017,7 @@ function Header() {
                                     />
 
                                     <span className="break-all">
-                                        info@amisankalp.org
+                                        amisankalp2026@gmail.com
                                     </span>
 
                                 </a>
