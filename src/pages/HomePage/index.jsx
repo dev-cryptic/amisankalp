@@ -17,10 +17,14 @@ import ProgrammeCard from '../../components/ProgrammeCard'
 import SDGCard from "../../components/SDGCard";
 import ImpactStories from "../../components/ImpactStories";
 import SupportCause from "../../components/SupportCause";
+import TopContributors from '../../components/TopContributors'
 function index() {
     return (
         <>
             <Hero />
+
+
+            <TopContributors />
 
 
 
