@@ -137,7 +137,7 @@ const navItems = [
         dropdown: [
             {
                 label: "Blog",
-                href: "/resources#blog",
+                href: "/resources#blogs",
             },
             {
                 label: "Films / Videos",
