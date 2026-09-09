@@ -16,31 +16,23 @@ const navItems = [
 
     {
         label: "About Us",
-        href: "/about",
+        href: "/about-us",
         dropdown: [
             {
-                label: "About Us / Our Story",
-                href: "/about",
+                label: "Our Story",
+                href: "/about-us#our-story",
+            },
+            {
+                label: "Our Values",
+                href: "/about-us#our-value",
             },
             {
                 label: "Leadership",
-                href: "/about/leadership",
-            },
-            {
-                label: "Advisors",
-                href: "/about/advisors",
-            },
-            {
-                label: "Our People / Team",
-                href: "/about/team",
-            },
-            {
-                label: "Reach & Presence",
-                href: "/about/reach",
+                href: "/about-us#leadership",
             },
             {
                 label: "Governance",
-                href: "/about/governance",
+                href: "/about-us#governance",
             },
         ],
     },
@@ -146,14 +138,6 @@ const navItems = [
             {
                 label: "Blog",
                 href: "/resources/blog",
-            },
-            {
-                label: "Newsletter Archive",
-                href: "/resources/newsletters",
-            },
-            {
-                label: "Annual Reports",
-                href: "/resources/reports",
             },
             {
                 label: "Films / Videos",

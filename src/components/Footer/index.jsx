@@ -91,31 +91,24 @@ const resourceLinks = [
 const organisationLinks = [
   {
     label: "About Us",
-    href: "/about",
+    href: "/about-us",
   },
   {
     label: "Leadership",
-    href: "/about/leadership",
-  },
-  {
-    label: "Reach & Presence",
-    href: "/about/reach",
+    href: "/about-us#leadership",
   },
   {
     label: "Governance",
-    href: "/about/governance",
+    href: "/about-us#governance",
   },
-  {
-    label: "Media Centre",
-    href: "/media",
-  },
+  
   {
     label: "Contact Us",
     href: "/contact",
   },
   {
     label: "FAQs",
-    href: "/faqs",
+    href: "/contact#faq",
   },
 ];
 
