@@ -137,15 +137,15 @@ const navItems = [
         dropdown: [
             {
                 label: "Blog",
-                href: "/resources/blog",
+                href: "/resources#blog",
             },
             {
                 label: "Films / Videos",
-                href: "/resources/videos",
+                href: "/resources#films-videos",
             },
             {
                 label: "Stories of Change",
-                href: "/resources/stories",
+                href: "/resources#stories",
             },
         ],
     },
