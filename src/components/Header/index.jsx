@@ -240,7 +240,7 @@ function Header() {
                     <div className="flex items-center gap-6">
 
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+918571990545"
                             className="
                 flex
                 items-center
@@ -253,7 +253,7 @@ function Header() {
                             <Phone size={13} />
 
                             <span>
-                                +91 ABC
+                                +91 8571990545
                             </span>
                         </a>
 
@@ -959,7 +959,7 @@ function Header() {
                             <div className="space-y-3">
 
                                 <a
-                                    href="tel:+919876543210"
+                                    href="tel:+918571990545"
                                     className="
                   flex
                   items-center

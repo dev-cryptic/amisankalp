@@ -405,7 +405,7 @@ function Footer() {
                 className="inline-block"
               >
                 <img
-                  src="/images/amisankalp-logo-Footer.png"
+                  src="/images/amisankalp-logo-Footer.jpeg"
                   alt="Amisankalp Social Foundation"
                   className="
                     w-[175px]
@@ -437,7 +437,7 @@ function Footer() {
               <div className="mt-6 space-y-3">
 
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918571990545"
                   className="
                     flex
                     items-start
@@ -458,7 +458,7 @@ function Footer() {
                   />
 
                   <span>
-                    +91 98765 43210
+                    +91 85719 90545
                   </span>
                 </a>
 
