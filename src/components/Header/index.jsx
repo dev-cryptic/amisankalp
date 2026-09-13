@@ -370,9 +370,9 @@ function Header() {
         md:text-[18px]
       "
                             >
-                                AMISAN
+                                AMI
                                 <span className="text-brand-orange">
-                                    KALP
+                                    SANKALP
                                 </span>
                             </div>
 
