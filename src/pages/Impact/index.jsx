@@ -56,23 +56,9 @@ function Impact() {
       description:
         "Creating access to learning opportunities, educational support and skills that help children and young people build a stronger future.",
       image:
-        "https://media.istockphoto.com/id/1126130554/photo/row-of-old-books-with-colorful-covers-on-pastel-blue-background-education-concept-mock-up-for.jpg?b=1&s=1024x1024&w=0&k=20&c=eu3qD7Dt8Oojc2ikPNHR2L7kzqQw0VzYocBO-Fmmuc4=",
+        "/images/impact/education.jpg",
       icon: GraduationCap,
       color: "teal",
-      stats: [
-        {
-          value: "XX+",
-          label: "Learners Reached",
-        },
-        {
-          value: "XX+",
-          label: "Learning Initiatives",
-        },
-        {
-          value: "XX+",
-          label: "Communities Supported",
-        },
-      ],
       points: [
         "Improved access to educational opportunities",
         "Support for children and young learners",
@@ -86,23 +72,9 @@ function Impact() {
       description:
         "Working towards healthier communities through awareness, preventive care, health camps, nutrition and access to essential support.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcuTEYjnp_PgwTgoHd5EHw6H_XyWW0y160Dny-E8YHz33MClzTS1sJf-78&s=10",
+        "/images/impact/health.jpg",
       icon: HeartPulse,
       color: "teal",
-      stats: [
-        {
-          value: "XX+",
-          label: "People Reached",
-        },
-        {
-          value: "XX+",
-          label: "Health Initiatives",
-        },
-        {
-          value: "XX+",
-          label: "Community Activities",
-        },
-      ],
       points: [
         "Health awareness and preventive care",
         "Community health initiatives",
@@ -116,23 +88,9 @@ function Impact() {
       description:
         "Supporting individuals and families with skills, livelihood opportunities and pathways towards greater economic independence.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAGdLj5yOMAb5lnpFffFk171_VQPjJUIDJK3v-Jl3fFb0Ar50O5B2jWVT&s=10",
+        "/images/impact/livelihood.jpg",
       icon: HandCoins,
       color: "orange",
-      stats: [
-        {
-          value: "XX+",
-          label: "People Trained",
-        },
-        {
-          value: "XX+",
-          label: "Skill Initiatives",
-        },
-        {
-          value: "XX+",
-          label: "Livelihoods Supported",
-        },
-      ],
       points: [
         "Skill development and vocational training",
         "Support for entrepreneurship",
@@ -146,23 +104,9 @@ function Impact() {
       description:
         "Creating opportunities for women to develop skills, strengthen livelihoods, participate in leadership and build greater independence.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSab1pxj7DlTtgE0h2odZIQf9ryAvT432elUnZQCYMavQ&s=10",
+        "/images/impact/women-empowerment.jpg",
       icon: VenusAndMars,
       color: "orange",
-      stats: [
-        {
-          value: "XX+",
-          label: "Women Reached",
-        },
-        {
-          value: "XX+",
-          label: "Training Initiatives",
-        },
-        {
-          value: "XX+",
-          label: "Communities Engaged",
-        },
-      ],
       points: [
         "Skills and capacity building",
         "Livelihood and entrepreneurship support",
@@ -176,23 +120,9 @@ function Impact() {
       description:
         "Promoting compassionate care for animals through welfare initiatives, awareness and community participation.",
       image:
-        "https://thumbs.dreamstime.com/b/wildlife-conservation-day-wild-animals-to-home-wildlife-protection-wildlife-conservation-day-wild-animals-to-home-167494159.jpg",
+        "/images/impact/animal-welfare.jpg",
       icon: PawPrint,
       color: "green",
-      stats: [
-        {
-          value: "XX+",
-          label: "Animals Supported",
-        },
-        {
-          value: "XX+",
-          label: "Welfare Initiatives",
-        },
-        {
-          value: "XX+",
-          label: "Awareness Activities",
-        },
-      ],
       points: [
         "Animal welfare and care",
         "Community awareness",
@@ -206,23 +136,9 @@ function Impact() {
       description:
         "Encouraging communities to participate in tree plantation, environmental awareness and long-term ecological care.",
       image:
-        "https://static.vecteezy.com/system/resources/thumbnails/074/135/901/small/young-plant-soil-hand-nature-growth-environment-green-forest-sunlight-outdoor-person-gently-holds-rich-soil-and-small-seedling-symbolizing-hope-sustainability-and-environmental-care-photo.jpeg",
+        "/images/impact/tree-plantation.jpg",
       icon: Trees,
       color: "green",
-      stats: [
-        {
-          value: "XX+",
-          label: "Trees Planted",
-        },
-        {
-          value: "XX+",
-          label: "Plantation Drives",
-        },
-        {
-          value: "XX+",
-          label: "People Engaged",
-        },
-      ],
       points: [
         "Community tree plantation",
         "Environmental awareness",
@@ -242,11 +158,7 @@ function Impact() {
 
   return (
     <main className="w-full overflow-hidden">
-
-      {/* =================================================
-          HERO
-      ================================================= */}
-
+      {/* HERO */}
       <SectionHero
         eyebrow="Our Impact"
         title="Creating Change."
@@ -259,10 +171,7 @@ function Impact() {
         showAccent={true}
       />
 
-      {/* =================================================
-          IMPACT APPROACH
-      ================================================= */}
-
+      {/* IMPACT APPROACH */}
       <section
         className="
           relative
@@ -271,16 +180,13 @@ function Impact() {
           bg-white
           px-4
           py-14
-
           sm:px-6
           sm:py-18
-
           lg:px-8
           lg:py-20
         "
       >
         {/* Decorative background */}
-
         <div
           className="
             pointer-events-none
@@ -316,15 +222,12 @@ function Impact() {
               grid-cols-1
               items-center
               gap-10
-
               lg:grid-cols-[0.9fr_1.1fr]
               lg:gap-20
             "
           >
             {/* LEFT */}
-
             <div>
-
               <h2
                 className="
                   mt-5
@@ -334,22 +237,18 @@ function Impact() {
                   leading-[1.08]
                   tracking-[-0.03em]
                   text-brand-navy
-
                   sm:text-5xl
-
                   lg:text-[52px]
                 "
               >
-                Impact that goes
+                Impact that goes{" "}
                 <span className="text-brand-teal">
-                  {" "}
                   beyond numbers.
                 </span>
               </h2>
             </div>
 
             {/* RIGHT */}
-
             <div
               className="
                 lg:border-l
@@ -383,18 +282,12 @@ function Impact() {
                 Every programme is designed around meaningful participation,
                 practical action and long-term community impact.
               </p>
-
-              {/* Principles */}
-
             </div>
           </div>
         </div>
       </section>
 
-      {/* =================================================
-          OVERALL IMPACT
-      ================================================= */}
-
+      {/* OVERALL IMPACT */}
       <section
         className="
           relative
@@ -403,42 +296,25 @@ function Impact() {
           bg-[#f5f9fa]
           px-4
           py-14
-
           sm:px-6
           sm:py-18
-
           lg:px-8
           lg:py-20
         "
       >
         <div className="mx-auto max-w-[1200px]">
-
           {/* Heading */}
-
           <div
             className="
               flex
               flex-col
               gap-4
-
               sm:flex-row
               sm:items-end
               sm:justify-between
             "
           >
             <div>
-              {/* <p
-                className="
-                  text-[11px]
-                  font-bold
-                  uppercase
-                  tracking-[0.18em]
-                  text-brand-navy
-                "
-              >
-                Our Impact So Far
-              </p> */}
-
               <h2
                 className="
                   mt-2
@@ -446,19 +322,15 @@ function Impact() {
                   font-bold
                   tracking-tight
                   text-brand-teal
-
                   sm:text-4xl
                 "
               >
                 Our Impact So Far
               </h2>
             </div>
-
-            
           </div>
 
-          {/* Impact Dashboard */}
-
+          {/* Overall Impact Dashboard */}
           <div
             className="
               relative
@@ -470,7 +342,6 @@ function Impact() {
             "
           >
             {/* Background glow */}
-
             <div
               className="
                 pointer-events-none
@@ -500,9 +371,7 @@ function Impact() {
             />
 
             <div className="relative z-10">
-
               {/* Top Message */}
-
               <div
                 className="
                   flex
@@ -512,10 +381,8 @@ function Impact() {
                   border-white/10
                   px-6
                   py-7
-
                   sm:px-8
                   sm:py-8
-
                   lg:flex-row
                   lg:items-center
                   lg:justify-between
@@ -553,7 +420,6 @@ function Impact() {
                       text-xl
                       font-bold
                       text-white
-
                       sm:text-2xl
                     "
                   >
@@ -573,7 +439,6 @@ function Impact() {
                     border-white/10
                     bg-white/[0.04]
                     text-brand-teal-light
-
                     sm:flex
                   "
                 >
@@ -581,28 +446,22 @@ function Impact() {
                 </div>
               </div>
 
-              {/* Stats */}
-
+              {/* Overall Stats */}
               <div
                 className="
                   grid
                   grid-cols-2
-
                   lg:grid-cols-4
                 "
               >
-
                 {/* People */}
-
                 <div
                   className="
                     group
                     border-b
                     border-white/10
                     p-6
-
                     sm:p-8
-
                     lg:border-b-0
                     lg:border-r
                     lg:p-9
@@ -623,10 +482,7 @@ function Impact() {
                       group-hover:scale-105
                     "
                   >
-                    <Users
-                      size={21}
-                      strokeWidth={1.7}
-                    />
+                    <Users size={21} strokeWidth={1.7} />
                   </div>
 
                   <p
@@ -636,11 +492,10 @@ function Impact() {
                       font-bold
                       tracking-tight
                       text-white
-
                       sm:text-5xl
                     "
                   >
-                    XX+
+                    1K+
                   </p>
 
                   <p
@@ -666,16 +521,13 @@ function Impact() {
                 </div>
 
                 {/* Communities */}
-
                 <div
                   className="
                     group
                     border-b
                     border-white/10
                     p-6
-
                     sm:p-8
-
                     lg:border-b-0
                     lg:border-r
                     lg:p-9
@@ -696,10 +548,7 @@ function Impact() {
                       group-hover:scale-105
                     "
                   >
-                    <MapPin
-                      size={21}
-                      strokeWidth={1.7}
-                    />
+                    <MapPin size={21} strokeWidth={1.7} />
                   </div>
 
                   <p
@@ -709,11 +558,10 @@ function Impact() {
                       font-bold
                       tracking-tight
                       text-white
-
                       sm:text-5xl
                     "
                   >
-                    XX+
+                    100+
                   </p>
 
                   <p
@@ -739,16 +587,13 @@ function Impact() {
                 </div>
 
                 {/* Initiatives */}
-
                 <div
                   className="
                     group
                     border-r
                     border-white/10
                     p-6
-
                     sm:p-8
-
                     lg:p-9
                   "
                 >
@@ -767,10 +612,7 @@ function Impact() {
                       group-hover:scale-105
                     "
                   >
-                    <HeartPulse
-                      size={21}
-                      strokeWidth={1.7}
-                    />
+                    <HeartPulse size={21} strokeWidth={1.7} />
                   </div>
 
                   <p
@@ -780,11 +622,10 @@ function Impact() {
                       font-bold
                       tracking-tight
                       text-white
-
                       sm:text-5xl
                     "
                   >
-                    XX+
+                    58+
                   </p>
 
                   <p
@@ -810,14 +651,11 @@ function Impact() {
                 </div>
 
                 {/* Environment */}
-
                 <div
                   className="
                     group
                     p-6
-
                     sm:p-8
-
                     lg:p-9
                   "
                 >
@@ -836,10 +674,7 @@ function Impact() {
                       group-hover:scale-105
                     "
                   >
-                    <Trees
-                      size={21}
-                      strokeWidth={1.7}
-                    />
+                    <Trees size={21} strokeWidth={1.7} />
                   </div>
 
                   <p
@@ -849,11 +684,10 @@ function Impact() {
                       font-bold
                       tracking-tight
                       text-white
-
                       sm:text-5xl
                     "
                   >
-                    XX+
+                    32+
                   </p>
 
                   <p
@@ -883,10 +717,7 @@ function Impact() {
         </div>
       </section>
 
-      {/* =================================================
-          PROGRAMME IMPACTS
-      ================================================= */}
-
+      {/* PROGRAMME IMPACTS */}
       <section className="w-full bg-white">
         {impactAreas.map((area, index) => {
           const Icon = area.icon;
@@ -894,9 +725,7 @@ function Impact() {
           return (
             <section
               key={area.title}
-              id={area.title
-                .toLowerCase()
-                .replace(/\s+/g, "-")}
+              id={area.title.toLowerCase().replace(/\s+/g, "-")}
               className={`
                 relative
                 w-full
@@ -905,13 +734,10 @@ function Impact() {
                 border-gray-100
                 px-4
                 py-12
-
                 sm:px-6
                 sm:py-16
-
                 lg:px-8
                 lg:py-20
-
                 ${
                   index % 2 === 0
                     ? "bg-white"
@@ -920,19 +746,15 @@ function Impact() {
               `}
             >
               <div className="mx-auto max-w-[1200px]">
-
                 <div
                   className={`
                     grid
                     grid-cols-1
                     items-center
                     gap-8
-
                     sm:gap-10
-
                     lg:grid-cols-2
                     lg:gap-16
-
                     ${
                       index % 2 !== 0
                         ? "lg:[&>div:first-child]:order-2"
@@ -940,11 +762,7 @@ function Impact() {
                     }
                   `}
                 >
-
-                  {/* =================================================
-                      IMAGE
-                  ================================================= */}
-
+                  {/* IMAGE */}
                   <div className="relative">
                     <div
                       className="
@@ -971,7 +789,6 @@ function Impact() {
                       />
 
                       {/* Image overlay */}
-
                       <div
                         className="
                           pointer-events-none
@@ -985,7 +802,6 @@ function Impact() {
                       />
 
                       {/* Floating Icon */}
-
                       <div
                         className="
                           absolute
@@ -1005,15 +821,11 @@ function Impact() {
                           backdrop-blur
                         "
                       >
-                        <Icon
-                          size={22}
-                          strokeWidth={1.8}
-                        />
+                        <Icon size={22} strokeWidth={1.8} />
                       </div>
                     </div>
 
                     {/* Decorative line */}
-
                     <div
                       className="
                         absolute
@@ -1027,14 +839,9 @@ function Impact() {
                     />
                   </div>
 
-                  {/* =================================================
-                      CONTENT
-                  ================================================= */}
-
+                  {/* CONTENT */}
                   <div className="max-w-xl lg:py-4">
-
                     {/* Eyebrow */}
-
                     <div className="flex items-center gap-3">
                       <span
                         className="
@@ -1052,7 +859,6 @@ function Impact() {
                           uppercase
                           tracking-[0.18em]
                           text-brand-teal
-
                           sm:text-xs
                         "
                       >
@@ -1061,7 +867,6 @@ function Impact() {
                     </div>
 
                     {/* Title */}
-
                     <h2
                       className="
                         mt-4
@@ -1070,9 +875,7 @@ function Impact() {
                         leading-tight
                         tracking-[-0.025em]
                         text-brand-navy
-
                         sm:text-4xl
-
                         lg:text-[42px]
                       "
                     >
@@ -1080,7 +883,6 @@ function Impact() {
                     </h2>
 
                     {/* Description */}
-
                     <p
                       className="
                         mt-4
@@ -1088,7 +890,6 @@ function Impact() {
                         text-sm
                         leading-7
                         text-gray-600
-
                         sm:text-base
                         sm:leading-8
                       "
@@ -1096,86 +897,13 @@ function Impact() {
                       {area.description}
                     </p>
 
-                    {/* =================================================
-                        STATS
-                    ================================================= */}
-
-                    <div
-                      className="
-                        mt-6
-                        grid
-                        grid-cols-3
-                        overflow-hidden
-                        rounded-2xl
-                        border
-                        border-gray-200
-                        bg-white
-                        shadow-[0_8px_30px_rgba(6,43,70,0.05)]
-                      "
-                    >
-                      {area.stats.map(
-                        (stat, statIndex) => (
-                          <div
-                            key={stat.label}
-                            className={`
-                              px-2
-                              py-4
-                              text-center
-
-                              sm:px-4
-                              sm:py-5
-
-                              ${
-                                statIndex !==
-                                area.stats.length - 1
-                                  ? "border-r border-gray-100"
-                                  : ""
-                              }
-                            `}
-                          >
-                            <p
-                              className="
-                                text-xl
-                                font-bold
-                                tracking-tight
-                                text-brand-teal
-
-                                sm:text-2xl
-                              "
-                            >
-                              {stat.value}
-                            </p>
-
-                            <p
-                              className="
-                                mx-auto
-                                mt-1
-                                max-w-[100px]
-                                text-[9px]
-                                leading-4
-                                text-gray-500
-
-                                sm:text-xs
-                              "
-                            >
-                              {stat.label}
-                            </p>
-                          </div>
-                        )
-                      )}
-                    </div>
-
-                    {/* =================================================
-                        IMPACT POINTS
-                    ================================================= */}
-
+                    {/* Impact Points */}
                     <div
                       className="
                         mt-6
                         grid
                         grid-cols-1
                         gap-2.5
-
                         sm:grid-cols-2
                         sm:gap-3
                       "
@@ -1208,10 +936,7 @@ function Impact() {
                       ))}
                     </div>
 
-                    {/* =================================================
-                        EXPLORE BUTTON
-                    ================================================= */}
-
+                    {/* Explore Button */}
                     <a
                       href={programmeLinks[area.title]}
                       className="
@@ -1230,7 +955,6 @@ function Impact() {
                         shadow-[0_8px_20px_rgba(6,43,70,0.12)]
                         transition-all
                         duration-300
-
                         hover:-translate-y-0.5
                         hover:bg-brand-teal
                         hover:shadow-[0_10px_25px_rgba(0,143,149,0.18)]
@@ -1255,26 +979,20 @@ function Impact() {
         })}
       </section>
 
-      {/* =================================================
-          IMPACT STORIES
-      ================================================= */}
-
+      {/* IMPACT STORIES */}
       <section
         className="
           w-full
           bg-brand-navy
           px-4
           py-14
-
           sm:px-6
           sm:py-18
-
           lg:px-8
           lg:py-20
         "
       >
         <div className="mx-auto max-w-[1200px]">
-
           <div className="max-w-2xl">
             <p
               className="
@@ -1295,7 +1013,6 @@ function Impact() {
                 font-bold
                 tracking-tight
                 text-white
-
                 sm:text-4xl
               "
             >
@@ -1308,7 +1025,6 @@ function Impact() {
                 text-sm
                 leading-7
                 text-white/65
-
                 sm:text-base
               "
             >
@@ -1319,20 +1035,16 @@ function Impact() {
           </div>
 
           {/* Stories */}
-
           <div
             className="
               mt-9
               grid
               grid-cols-1
               gap-6
-
               md:grid-cols-3
             "
           >
-
             {/* Story 1 */}
-
             <article
               className="
                 overflow-hidden
@@ -1386,7 +1098,6 @@ function Impact() {
             </article>
 
             {/* Story 2 */}
-
             <article
               className="
                 overflow-hidden
@@ -1440,7 +1151,6 @@ function Impact() {
             </article>
 
             {/* Story 3 */}
-
             <article
               className="
                 overflow-hidden
@@ -1496,12 +1206,8 @@ function Impact() {
         </div>
       </section>
 
-      {/* =================================================
-          IMPACT CTA
-      ================================================= */}
-
+      {/* IMPACT CTA */}
       {/* CTA intentionally kept commented as in the original file */}
-
     </main>
   );
 }

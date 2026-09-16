@@ -198,7 +198,7 @@ function Programmes() {
           needs, create opportunities and build a
           sustainable future for all.
         "
-        image="/images/hero/programmes.jpg"
+        image="/images/programmes/main-programme-banner.jpeg"
       />
 
 
@@ -357,7 +357,7 @@ function Programmes() {
           opportunities to children and youth for a
           brighter future.
         "
-        image="https://media.istockphoto.com/id/1126130554/photo/row-of-old-books-with-colorful-covers-on-pastel-blue-background-education-concept-mock-up-for.jpg?b=1&s=1024x1024&w=0&k=20&c=eu3qD7Dt8Oojc2ikPNHR2L7kzqQw0VzYocBO-Fmmuc4="
+        image="/images/programmes/education.jpeg"
         icon={GraduationCap}
         color="teal"
         href="/programmes/education"
@@ -380,7 +380,7 @@ function Programmes() {
           Improving healthcare access and promoting
           well-being for healthier communities.
         "
-        image="https://static.vecteezy.com/system/resources/thumbnails/070/374/058/small/medical-equipment-on-blue-background-with-stethoscope-clipboard-and-gloves-free-photo.jpg"
+        image="/images/programmes/health.jpeg"
         icon={HeartPulse}
         color="teal"
         href="/programmes/health"
@@ -403,7 +403,7 @@ function Programmes() {
           Creating sustainable livelihood opportunities
           and skills for economic independence.
         "
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAGdLj5yOMAb5lnpFffFk171_VQPjJUIDJK3v-Jl3fFb0Ar50O5B2jWVT&s=10"
+        image="/images/programmes/livelihood.jpeg"
         icon={BriefcaseBusiness}
         color="orange"
         href="/programmes/livelihood"
@@ -426,7 +426,7 @@ function Programmes() {
           Empowering women to lead independent,
           dignified and meaningful lives.
         "
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSab1pxj7DlTtgE0h2odZIQf9ryAvT432elUnZQCYMavQ&s=10"
+        image="/images/programmes/women-empowerment.jpeg"
         icon={Users}
         color="pink"
         href="/programmes/women-empowerment"
@@ -449,7 +449,7 @@ function Programmes() {
           Promoting compassionate care, protection and
           well-being for animals and their communities.
         "
-        image="https://thumbs.dreamstime.com/b/wildlife-conservation-day-wild-animals-to-home-wildlife-protection-wildlife-conservation-day-wild-animals-to-home-167494159.jpg"
+        image="/images/programmes/animal-welfare.jpeg"
         icon={PawPrint}
         color="orange"
         href="/programmes/animal-welfare"
@@ -473,7 +473,7 @@ function Programmes() {
           plantation, environmental awareness and
           sustainable practices.
         "
-        image="https://static.vecteezy.com/system/resources/thumbnails/074/135/901/small/young-plant-soil-hand-nature-growth-environment-green-forest-sunlight-outdoor-person-gently-holds-rich-soil-and-small-seedling-symbolizing-hope-sustainability-and-environmental-care-photo.jpeg"
+        image="/images/programmes/tree-plantation.jpeg"
         icon={Leaf}
         color="green"
         href="/programmes/tree-plantation"

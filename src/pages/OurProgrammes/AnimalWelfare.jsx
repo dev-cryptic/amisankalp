@@ -82,11 +82,9 @@ function AnimalWelfare() {
         subtitle="Creating a more compassionate world."
         highlight="Every life deserves care, dignity and protection."
         description="
-          Our animal welfare initiatives focus on compassionate
-          care, protection, health support and creating greater
-          awareness within communities.
+          
         "
-        image="https://thumbs.dreamstime.com/b/wildlife-conservation-day-wild-animals-to-home-wildlife-protection-wildlife-conservation-day-wild-animals-to-home-167494159.jpg"
+        image="/images/programmes/animal-welfare.jpeg"
         theme="light"
         accentColor="orange"
         buttonText="Support Animal Welfare"

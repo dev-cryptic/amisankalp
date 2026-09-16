@@ -1,16 +1,17 @@
 import React from 'react'
+import { useState } from "react";
 import Hero from '../../components/HeroSection'
 import {
-    ArrowRight,
-    Target,
-    HeartHandshake,
-    Globe2,
-    GraduationCap,
-    HeartPulse,
-    BriefcaseBusiness,
-    Venus,
-    PawPrint,
-    Leaf,
+  ArrowRight,
+  Target,
+  HeartHandshake,
+  Globe2,
+  GraduationCap,
+  HeartPulse,
+  BriefcaseBusiness,
+  Venus,
+  PawPrint,
+  Leaf,
 } from "lucide-react";
 
 import ProgrammeCard from '../../components/ProgrammeCard'
@@ -18,17 +19,24 @@ import SDGCard from "../../components/SDGCard";
 import ImpactStories from "../../components/ImpactStories";
 import SupportCause from "../../components/SupportCause";
 import TopContributors from '../../components/TopContributors'
+import Loader from '../../components/Loader';
 function index() {
-    return (
-        <>
-            <Hero />
+  const [loading, setLoading] = useState(true);
+
+  return (
+    <>
+      {loading && (
+        <Loader onComplete={() => setLoading(false)} />
+      )}
+
+      <Hero />
 
 
-            <TopContributors />
+      <TopContributors />
 
 
 
-            {/* =====================================================
+      {/* =====================================================
           OUR MISSION
       ===================================================== */}
 
@@ -286,7 +294,7 @@ function index() {
                 ================================================= */}
 
                 <a
-                  href="/about"
+                  href="/about-us#our-story"
                   className="
                     group
                     mt-7
@@ -600,315 +608,114 @@ function index() {
 
 
 
-{/* =====================================================
+      {/* =====================================================
     OUR PROGRAMMES
 ===================================================== */}
 
 <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+        {/* Section header */}
+        <div className="mb-8 flex flex-col gap-5 sm:mb-10 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-[760px]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-teal/15 bg-brand-teal/[0.04] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-brand-teal sm:px-4 sm:py-2 sm:text-xs">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-orange sm:h-2 sm:w-2" />
+              Our Programmes
+            </div>
 
-  <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+            <h2 className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-brand-navy sm:text-4xl lg:text-5xl">
+              Creating change where it
+              <span className="text-brand-teal"> matters most.</span>
+            </h2>
 
-    {/* =================================================
-        SECTION HEADER
-    ================================================= */}
+            <p className="mt-4 max-w-[650px] text-sm leading-7 text-gray-500 sm:text-base">
+              Our programmes focus on the areas that can create meaningful and
+              lasting change for individuals, families and communities.
+            </p>
+          </div>
 
-    <div
-      className="
-        mb-8
-        flex
-        flex-col
-        gap-5
+          <a
+            href="/programmes"
+            className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-xl border border-brand-navy/15 bg-white px-5 py-3 text-sm font-semibold text-brand-navy shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-teal hover:bg-brand-teal hover:text-white hover:shadow-lg"
+          >
+            Explore All Programmes
 
-        sm:mb-10
-
-        lg:mb-12
-        lg:flex-row
-        lg:items-end
-        lg:justify-between
-      "
-    >
-
-      <div className="max-w-[760px]">
-
-        {/* EYEBROW */}
-
-        <div
-          className="
-            inline-flex
-            items-center
-            gap-2
-            rounded-full
-            border
-            border-brand-teal/15
-            bg-brand-teal/[0.04]
-            px-3
-            py-1.5
-
-            text-[10px]
-            font-bold
-            uppercase
-            tracking-[0.15em]
-            text-brand-teal
-
-            sm:px-4
-            sm:py-2
-            sm:text-xs
-          "
-        >
-
-          <span
-            className="
-              h-1.5
-              w-1.5
-              rounded-full
-              bg-brand-orange
-
-              sm:h-2
-              sm:w-2
-            "
-          />
-
-          Our Programmes
-
+            <ArrowRight
+              size={17}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </a>
         </div>
 
+        {/* Programme grid */}
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          <ProgrammeCard
+            title="Education"
+            icon={<GraduationCap size={34} strokeWidth={1.6} />}
+            description="Creating access to quality education, learning opportunities and a stronger foundation for every child."
+            iconColor="text-brand-navy"
+            arrowColor="bg-brand-navy"
+            backgroundImage="/images/homepage/education-card.jpeg"
+            gradient="from-brand-navy/95 via-brand-navy/65"
+            href="/programmes/education"
+          />
 
-        {/* HEADING */}
+          <ProgrammeCard
+            title="Health"
+            icon={<HeartPulse size={34} strokeWidth={1.6} />}
+            description="Improving access to healthcare and supporting healthier, more resilient communities."
+            iconColor="text-brand-teal"
+            arrowColor="bg-brand-teal"
+            backgroundImage="/images/programmes/health.jpg"
+            gradient="from-brand-teal/95 via-brand-teal/65"
+            href="/programmes/health"
+          />
 
-        <h2
-          className="
-            mt-4
+          <ProgrammeCard
+            title="Livelihood"
+            icon={<BriefcaseBusiness size={34} strokeWidth={1.6} />}
+            description="Building skills, opportunities and sustainable income pathways for individuals and families."
+            iconColor="text-brand-orange"
+            arrowColor="bg-brand-orange"
+            backgroundImage="/images/programmes/livelihood.jpg"
+            gradient="from-brand-orange/95 via-brand-orange/65"
+            href="/programmes/livelihood"
+          />
 
-            text-3xl
-            font-bold
-            leading-[1.12]
-            tracking-tight
-            text-brand-navy
+          <ProgrammeCard
+            title="Women Empowerment"
+            icon={<Venus size={34} strokeWidth={1.6} />}
+            description="Supporting women with knowledge, skills and opportunities to lead independent lives."
+            iconColor="text-pink-600"
+            arrowColor="bg-pink-600"
+            backgroundImage="/images/homepage/women-empowerment-card.jpeg"
+            gradient="from-pink-600/95 via-pink-600/65"
+            href="/programmes/women-empowerment"
+          />
 
-            sm:text-4xl
+          <ProgrammeCard
+            title="Animal Welfare"
+            icon={<PawPrint size={34} strokeWidth={1.6} />}
+            description="Promoting compassionate care, protection and better lives for animals in our communities."
+            iconColor="text-brand-orange"
+            arrowColor="bg-brand-orange"
+            backgroundImage="/images/homepage/animal-welfare-card.jpeg"
+            gradient="from-brand-orange/95 via-brand-orange/65"
+            href="/programmes/animal-welfare"
+          />
 
-            lg:text-5xl
-          "
-        >
-          Creating change where it
-          <span className="text-brand-teal">
-            {" "}matters most.
-          </span>
-        </h2>
-
-
-        {/* DESCRIPTION */}
-
-        <p
-          className="
-            mt-4
-            max-w-[650px]
-
-            text-sm
-            leading-7
-            text-gray-500
-
-            sm:text-base
-            sm:leading-7
-          "
-        >
-          Our programmes focus on the areas that can create
-          meaningful and lasting change for individuals,
-          families and communities.
-        </p>
-
+          <ProgrammeCard
+            title="Tree Plantation"
+            icon={<Leaf size={34} strokeWidth={1.6} />}
+            description="Planting trees to restore nature, improve air quality, and build a greener, healthier future."
+            iconColor="text-brand-green"
+            arrowColor="bg-brand-green"
+            backgroundImage="/images/homepage/tree-plantation-card.jpeg"
+            gradient="from-brand-green/95 via-brand-green/65"
+            href="/programmes/grassroots-development"
+          />
+        </div>
       </div>
-
-
-      {/* VIEW ALL */}
-
-      <a
-        href="/programmes"
-        className="
-          group
-          inline-flex
-          w-fit
-          shrink-0
-          items-center
-          gap-2
-
-          rounded-xl
-          border
-          border-brand-navy/15
-          bg-white
-
-          px-5
-          py-3
-
-          text-sm
-          font-semibold
-          text-brand-navy
-
-          shadow-sm
-
-          transition-all
-          duration-300
-
-          hover:-translate-y-0.5
-          hover:border-brand-teal
-          hover:bg-brand-teal
-          hover:text-white
-          hover:shadow-lg
-        "
-      >
-
-        Explore All Programmes
-
-        <ArrowRight
-          size={17}
-          className="
-            transition-transform
-            duration-300
-            group-hover:translate-x-1
-          "
-        />
-
-      </a>
-
-    </div>
-
-
-    {/* =================================================
-        PROGRAMME GRID — 3 PER ROW
-    ================================================= */}
-
-    <div
-      className="
-        grid
-        grid-cols-1
-        gap-5
-
-        sm:grid-cols-2
-
-        lg:grid-cols-3
-
-        lg:gap-6
-      "
-    >
-
-      {/* EDUCATION */}
-
-      <ProgrammeCard
-        number="01"
-        icon={
-          <GraduationCap
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Education"
-        description="Creating access to quality education, learning opportunities and a stronger foundation for every child."
-        iconColor="text-brand-navy"
-        arrowColor="bg-brand-navy"
-        accent="from-brand-navy/10"
-        href="/programmes/education"
-      />
-
-
-      {/* HEALTH */}
-
-      <ProgrammeCard
-        number="02"
-        icon={
-          <HeartPulse
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Health"
-        description="Improving access to healthcare and supporting healthier, more resilient communities."
-        iconColor="text-brand-teal"
-        arrowColor="bg-brand-teal"
-        accent="from-brand-teal/10"
-        href="/programmes/health"
-      />
-
-
-      {/* LIVELIHOOD */}
-
-      <ProgrammeCard
-        number="03"
-        icon={
-          <BriefcaseBusiness
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Livelihood"
-        description="Building skills, opportunities and sustainable income pathways for individuals and families."
-        iconColor="text-brand-orange"
-        arrowColor="bg-brand-orange"
-        accent="from-brand-orange/10"
-        href="/programmes/livelihood"
-      />
-
-
-      {/* WOMEN EMPOWERMENT */}
-
-      <ProgrammeCard
-        number="04"
-        icon={
-          <Venus
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Women Empowerment"
-        description="Supporting women with knowledge, skills and opportunities to lead independent lives."
-        iconColor="text-pink-600"
-        arrowColor="bg-pink-600"
-        accent="from-pink-500/10"
-        href="/programmes/women-empowerment"
-      />
-
-
-      {/* ANIMAL WELFARE */}
-
-      <ProgrammeCard
-        number="05"
-        icon={
-          <PawPrint
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Animal Welfare"
-        description="Promoting compassionate care, protection and better lives for animals in our communities."
-        iconColor="text-brand-orange"
-        arrowColor="bg-brand-orange"
-        accent="from-brand-orange/10"
-        href="/programmes/animal-welfare"
-      />
-
-
-      {/* GRASSROOTS */}
-
-      <ProgrammeCard
-        number="06"
-        icon={
-          <Leaf
-            size={34}
-            strokeWidth={1.6}
-          />
-        }
-        title="Tree Plantation"
-        description="Planting trees to restore nature, improve air quality, and build a greener, healthier future."
-        iconColor="text-brand-green"
-        arrowColor="bg-brand-green"
-        accent="from-brand-green/10"
-        href="/programmes/grassroots-development"
-      />
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
 
@@ -922,7 +729,7 @@ function index() {
 
 
 
-{/* =====================================================
+      {/* =====================================================
     SDG ALIGNMENT
 ===================================================== */}
 
@@ -938,13 +745,13 @@ function index() {
 
 
 
-<ImpactStories />
+      <ImpactStories />
 
 
-<SupportCause />
+      <SupportCause />
 
-        </>
-    )
+    </>
+  )
 }
 
 export default index

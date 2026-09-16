@@ -20,6 +20,7 @@ import WomenEmpowerment from "./pages/OurProgrammes/WomenEmpowerment";
 import ContactUs from "./pages/ContactUs";
 import ResourceCenter from "./pages/ResourceCenter";
 import Impact from "./pages/Impact";
+import Volunteer from "./pages/Volunteer";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -77,6 +78,11 @@ const router = createBrowserRouter(
       <Route
         path="impact"
         element={<Impact />}
+      />
+
+      <Route
+        path="get-involved"
+        element={<Volunteer />}
       />
 
     </Route>

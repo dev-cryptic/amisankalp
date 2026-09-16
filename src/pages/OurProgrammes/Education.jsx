@@ -84,12 +84,9 @@ function Education() {
         subtitle="Creating opportunities to learn, grow and dream."
         highlight="Every child deserves the chance to build a brighter future."
         description="
-          We work to improve access to meaningful learning
-          opportunities while supporting children and young
-          people with the knowledge, skills and confidence
-          they need to move forward.
+          
         "
-        image="https://media.istockphoto.com/id/1126130554/photo/row-of-old-books-with-colorful-covers-on-pastel-blue-background-education-concept-mock-up-for.jpg?b=1&s=1024x1024&w=0&k=20&c=eu3qD7Dt8Oojc2ikPNHR2L7kzqQw0VzYocBO-Fmmuc4="
+        image="/images/programmes/education.jpeg"
 
         theme="light"
         accentColor="teal"

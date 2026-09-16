@@ -93,7 +93,7 @@ function ContactUs() {
       eyebrow="Contact Center"
         title="We're Here to Help."
         description="Have questions, suggestions, or need support? We'd love to hear from you."
-        image="https://t4.ftcdn.net/jpg/05/04/78/25/360_F_504782581_LHwsDbXlrFiiadWC4i15yV2lhbJnB8g0.jpg"
+        image="/images/contact-us/contact-us.jpeg"
         imagePosition="center"
         theme="navy"
         accentColor="teal"
@@ -1033,7 +1033,7 @@ function ContactUs() {
         </h3>
 
         <p className="mt-1 text-xs leading-5 text-gray-500">
-          +91 98765 43210
+          +91 85719 90545
           <br />
           Mon - Sat: 9 AM - 6 PM
         </p>

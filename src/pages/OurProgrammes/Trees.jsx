@@ -86,12 +86,9 @@ function Trees() {
         subtitle="Planting trees today for healthier communities tomorrow."
         highlight="Every tree can become part of a healthier, greener and more resilient environment."
         description="
-          Our tree plantation initiatives encourage
-          communities to participate in creating greener
-          spaces while building awareness about the
-          importance of trees and environmental care.
+          
         "
-        image="https://static.vecteezy.com/system/resources/thumbnails/074/135/901/small/young-plant-soil-hand-nature-growth-environment-green-forest-sunlight-outdoor-person-gently-holds-rich-soil-and-small-seedling-symbolizing-hope-sustainability-and-environmental-care-photo.jpeg"
+        image="/images/programmes/tree-plantation.jpeg"
         theme="light"
         accentColor="green"
         buttonText="Support Tree Plantation"

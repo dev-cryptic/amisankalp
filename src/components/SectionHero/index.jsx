@@ -296,11 +296,10 @@ function SectionHero({
 
               border
 
-              ${
-                theme === "light" ||
+              ${theme === "light" ||
                 theme === "white"
-                  ? "border-brand-teal/10"
-                  : "border-white/10"
+                ? "border-brand-teal/10"
+                : "border-white/10"
               }
 
               sm:h-[350px]
@@ -324,11 +323,10 @@ function SectionHero({
 
               border
 
-              ${
-                theme === "light" ||
+              ${theme === "light" ||
                 theme === "white"
-                  ? "border-brand-teal/10"
-                  : "border-white/10"
+                ? "border-brand-teal/10"
+                : "border-white/10"
               }
 
               sm:h-[280px]
@@ -399,11 +397,10 @@ function SectionHero({
 
                     ${currentAccent.border}
 
-                    ${
-                      theme === "light" ||
+                    ${theme === "light" ||
                       theme === "white"
-                        ? "bg-white/80"
-                        : "bg-white/10"
+                      ? "bg-white/80"
+                      : "bg-white/10"
                     }
 
                     px-3
@@ -434,43 +431,44 @@ function SectionHero({
               ================================================= */}
 
               {eyebrow && (
-                <div
-                  className="
-                    mb-3
-
-                    flex
-                    items-center
-                    gap-2
-                  "
-                >
-                  <span
-                    className={`
-                      h-1.5
-                      w-1.5
-
-                      rounded-full
-
-                      ${currentAccent.bg}
-                    `}
-                  />
-
-                  <p
-                    className={`
-                      text-[10px]
-
-                      font-bold
-
-                      uppercase
-
-                      tracking-[0.16em]
-
-                      ${currentAccent.text}
-
-                      sm:text-xs
-                    `}
+                <div className="mb-5">
+                  <div
+                    className="
+        inline-flex
+        items-center
+        gap-2
+        rounded-full
+        border
+        border-brand-orange/25
+        bg-brand-orange/10
+        px-3.5
+        py-1.5
+        shadow-[0_4px_15px_rgba(245,130,32,0.08)]
+      "
                   >
-                    {eyebrow}
-                  </p>
+                    <span
+                      className="
+          h-1.5
+          w-1.5
+          rounded-full
+          bg-brand-orange
+          shadow-[0_0_0_3px_rgba(245,130,32,0.12)]
+        "
+                    />
+
+                    <p
+                      className="
+          text-[10px]
+          font-bold
+          uppercase
+          tracking-[0.18em]
+          text-brand-orange
+          sm:text-xs
+        "
+                    >
+                      {eyebrow}
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -561,9 +559,9 @@ function SectionHero({
                   className={`
                     mt-5
 
-                    max-w-[620px]
+                    max-w-[720px]
 
-                    text-sm
+                    text-medium
 
                     leading-7
 
@@ -606,8 +604,8 @@ function SectionHero({
 
               {(buttonText ||
                 secondaryButtonText) && (
-                <div
-                  className="
+                  <div
+                    className="
                     mt-7
 
                     flex
@@ -616,13 +614,13 @@ function SectionHero({
 
                     gap-3
                   "
-                >
-                  {/* PRIMARY BUTTON */}
+                  >
+                    {/* PRIMARY BUTTON */}
 
-                  {buttonText && (
-                    <a
-                      href={buttonHref}
-                      className={`
+                    {buttonText && (
+                      <a
+                        href={buttonHref}
+                        className={`
                         group
 
                         inline-flex
@@ -654,28 +652,28 @@ function SectionHero({
 
                         sm:text-sm
                       `}
-                    >
-                      {buttonText}
+                      >
+                        {buttonText}
 
-                      <ArrowRight
-                        size={16}
+                        <ArrowRight
+                          size={16}
 
-                        className="
+                          className="
                           transition-transform
                           duration-300
 
                           group-hover:translate-x-1
                         "
-                      />
-                    </a>
-                  )}
+                        />
+                      </a>
+                    )}
 
-                  {/* SECONDARY BUTTON */}
+                    {/* SECONDARY BUTTON */}
 
-                  {secondaryButtonText && (
-                    <a
-                      href={secondaryButtonHref}
-                      className={`
+                    {secondaryButtonText && (
+                      <a
+                        href={secondaryButtonHref}
+                        className={`
                         inline-flex
 
                         items-center
@@ -685,12 +683,11 @@ function SectionHero({
 
                         border
 
-                        ${
-                          theme === "light" ||
-                          theme === "white"
+                        ${theme === "light" ||
+                            theme === "white"
                             ? "border-brand-navy/20 text-brand-navy hover:bg-brand-navy hover:text-white"
                             : "border-white/30 text-white hover:bg-white hover:text-brand-navy"
-                        }
+                          }
 
                         bg-transparent
 
@@ -708,12 +705,12 @@ function SectionHero({
 
                         sm:text-sm
                       `}
-                    >
-                      {secondaryButtonText}
-                    </a>
-                  )}
-                </div>
-              )}
+                      >
+                        {secondaryButtonText}
+                      </a>
+                    )}
+                  </div>
+                )}
             </div>
           </div>
 
@@ -784,16 +781,14 @@ function SectionHero({
 
                         lg:py-5
 
-                        ${
-                          index % 2 !== 0
-                            ? "border-l border-white/10"
-                            : ""
+                        ${index % 2 !== 0
+                          ? "border-l border-white/10"
+                          : ""
                         }
 
-                        ${
-                          index >= 2
-                            ? "border-t border-white/10 lg:border-t-0"
-                            : ""
+                        ${index >= 2
+                          ? "border-t border-white/10 lg:border-t-0"
+                          : ""
                         }
                       `}
                     >

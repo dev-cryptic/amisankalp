@@ -259,7 +259,8 @@ function AboutUs() {
 title="About Us"
         subtitle="Driven by compassion. Guided by values."
         highlight="Committed to lasting change."
-        image="https://static.vecteezy.com/system/resources/thumbnails/056/690/718/small/human-connection-highlighting-an-ngo-mission-blending-symbolism-of-hands-with-the-globe-promoting-collaboration-transformative-power-of-collective-efforts-on-global-scale-photo.jpg"
+        image="/images/about-us/about-us.jpeg"
+        
         values={values}
       />
 
@@ -418,7 +419,7 @@ title="About Us"
 
               {/* CTA */}
 
-              <a
+              {/* <a
                 href="/about-us"
                 className="
             group
@@ -469,7 +470,7 @@ title="About Us"
               group-hover:translate-x-1
             "
                 />
-              </a>
+              </a> */}
 
             </div>
 
@@ -923,36 +924,36 @@ title="About Us"
       <LeaderCard
         name="Amit"
         // role="Founder & CEO"
-        image="/images/leadership/rajeev-sharma.jpg"
-        linkedin="#"
-        email="mailto:contact@amisankalp.org"
+        image="/images/leadership/amit.jpg"
+        linkedin="https://www.linkedin.com/in/amit-kumar-71a7ba1ab/"
+        email="mailto:Panghalamit000@gmail.com"
       />
 
 
       <LeaderCard
         name="Amarjeet "
         // role="Co-founder & Director"
-        image="/images/leadership/anita-verma.jpg"
-        linkedin="#"
-        email="mailto:contact@amisankalp.org"
+        image="/images/leadership/amarjeet.jpg"
+        linkedin="https://www.linkedin.com/in/amarjeet-nehra-383874282/"
+        email="mailto:nehraamarjeet188@gmail.com"
       />
 
 
       <LeaderCard
         name="Anubhuti"
         // role="Chief Operating Officer"
-        image="/images/leadership/vikram-mehta.jpg"
-        linkedin="#"
-        email="mailto:contact@amisankalp.org"
+        image="/images/leadership/anubhuti.jpg"
+        linkedin="https://www.linkedin.com/in/anubhuti-jain-040215222/"
+        email="mailto:janubhuti1@gmail.com"
       />
 
 
       <LeaderCard
         name="Aashish hooda"
         // role="Chief Program Officer"
-        image="/images/leadership/neha-kapoor.jpg"
-        linkedin="#"
-        email="mailto:contact@amisankalp.org"
+        image="/images/leadership/aashish.jpg"
+        linkedin="https://www.linkedin.com/in/ashish-hooda-b88265229/"
+        email="mailto:hoodaashish84@gmail.com"
       />
 
     </div>

@@ -87,13 +87,9 @@ function WomenEmpowerment() {
         subtitle="Creating opportunities for confidence, independence and growth."
         highlight="When women have access to opportunities, skills and support, families and communities can move forward together."
         description="
-          Our women empowerment initiatives focus on
-          building skills, strengthening livelihoods,
-          encouraging education and creating opportunities
-          for women to participate more actively in their
-          communities.
+          
         "
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSab1pxj7DlTtgE0h2odZIQf9ryAvT432elUnZQCYMavQ&s=10"
+        image="/images/programmes/women-empowerment.jpeg"
         theme="light"
         accentColor="orange"
         buttonText="Support Women Empowerment"

@@ -36,55 +36,31 @@ const programmeLinks = [
 
 const involvementLinks = [
   {
-    label: "Individual Giving",
-    href: "/get-involved/donation",
-  },
-  {
-    label: "Corporate Partnerships",
-    href: "/get-involved/csr",
-  },
-  {
-    label: "Cause Marketing & Events",
-    href: "/get-involved/events",
-  },
-  {
-    label: "Employee Engagement",
-    href: "/get-involved/employee-engagement",
-  },
-  {
-    label: "School Partnerships",
-    href: "/get-involved/school-partnerships",
-  },
-  {
-    label: "Volunteer / Internships",
-    href: "/get-involved/volunteer",
-  },
-  {
-    label: "Careers",
-    href: "/get-involved/careers",
+    label: "Volunteer",
+    href: "/get-involved",
   },
 ];
 
 const resourceLinks = [
   {
     label: "Blog",
-    href: "/resources/blog",
+    href: "/resources#blog",
   },
-  {
-    label: "Newsletter Archive",
-    href: "/resources/newsletters",
-  },
-  {
-    label: "Annual Reports",
-    href: "/resources/reports",
-  },
+  // {
+  //   label: "Newsletter Archive",
+  //   href: "/resources/newsletters",
+  // },
+  // {
+  //   label: "Annual Reports",
+  //   href: "/resources/reports",
+  // },
   {
     label: "Films / Videos",
-    href: "/resources/videos",
+    href: "/resources#films-videos",
   },
   {
     label: "Stories of Change",
-    href: "/resources/stories",
+    href: "/resources#stories",
   },
 ];
 
@@ -92,6 +68,10 @@ const organisationLinks = [
   {
     label: "About Us",
     href: "/about-us",
+  },
+  {
+    label: "Voluneer",
+    href: "/get-involved",
   },
   {
     label: "Leadership",

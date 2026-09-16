@@ -87,12 +87,9 @@ function Livelihood() {
         subtitle="Turning skills and opportunities into greater independence."
         highlight="A stronger livelihood can create a stronger future for families and communities."
         description="
-          We support individuals and communities through
-          skill development, entrepreneurship and access
-          to opportunities that can contribute to sustainable
-          economic independence.
+          
         "
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAGdLj5yOMAb5lnpFffFk171_VQPjJUIDJK3v-Jl3fFb0Ar50O5B2jWVT&s=10"
+        image="/images/programmes/livelihood.jpeg"
         theme="light"
         accentColor="orange"
         buttonText="Support Livelihoods"

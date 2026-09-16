@@ -83,11 +83,9 @@ function Health() {
         subtitle="Improving access to care, awareness and well-being."
         highlight="Health is the foundation for a stronger and more resilient community."
         description="
-          We work to improve access to essential healthcare,
-          encourage preventive practices and promote healthier
-          lives through community-focused initiatives.
+         
         "
-        image="https://img.magnific.com/free-vector/digital-health-medical-research-background-with-heartbeat-line_1017-50392.jpg?semt=ais_hybrid&w=740&q=80"
+        image="/images/programmes/health.jpeg"
         theme="light"
         accentColor="teal"
         buttonText="Support Healthcare"
