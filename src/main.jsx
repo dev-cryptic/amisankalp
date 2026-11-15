@@ -21,6 +21,8 @@ import ContactUs from "./pages/ContactUs";
 import ResourceCenter from "./pages/ResourceCenter";
 import Impact from "./pages/Impact";
 import Volunteer from "./pages/Volunteer";
+import Donate from "./pages/Donate.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -84,6 +86,8 @@ const router = createBrowserRouter(
         path="get-involved"
         element={<Volunteer />}
       />
+
+      <Route path="/donate" element={<Donate />} />
 
     </Route>
 
