@@ -204,7 +204,7 @@ function Livelihood() {
             >
 
               <img
-                src="/images/programmes/livelihood-story.jpg"
+                src="/images/our-programme/livelihood.png"
                 alt="Community member working towards a sustainable livelihood"
                 loading="lazy"
                 className="

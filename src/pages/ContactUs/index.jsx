@@ -944,12 +944,12 @@ function ContactUs() {
 
       sm:grid-cols-2
 
-      lg:grid-cols-4
+      lg:grid-cols-3
     "
   >
 
     {/* Visit Us */}
-    <div
+    {/* <div
       className="
         flex
         items-center
@@ -992,7 +992,7 @@ function ContactUs() {
           New Delhi - 110001
         </p>
       </div>
-    </div>
+    </div> */}
 
     {/* Call Us */}
     <div
@@ -1120,10 +1120,10 @@ function ContactUs() {
 
         <div className="mt-2 flex items-center gap-4">
           <a
-            href="#"
+            href="https://www.instagram.com/ami_sankalp/"
             className="text-sm font-bold text-brand-navy transition-colors hover:text-brand-teal"
           >
-            f
+            🅾
           </a>
 
           <a
@@ -1141,7 +1141,7 @@ function ContactUs() {
           </a>
 
           <a
-            href="#"
+            href="https://www.youtube.com/@AmiSankalp"
             className="text-sm font-bold text-brand-navy transition-colors hover:text-brand-teal"
           >
             ▶

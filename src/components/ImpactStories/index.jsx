@@ -1,39 +1,61 @@
+import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Play,
+  X,
 } from "lucide-react";
 
 function ImpactStories() {
+  const [activeStory, setActiveStory] = useState(null);
+  
   const stories = [
     {
-      image: "/images/stories/education.jpg",
-      category: "Education",
-      title: "A New Beginning Through Education",
-      duration: "2:45",
-      href: "/stories/education",
+      image: "/images/stories/imp-1.png",
+      video: "https://res.cloudinary.com/syjslih0/video/upload/v1794754966/WhatsApp_Video_2026-11-14_at_20.37.26.mp4",
+      category: "Livelihood",
+      title: "Nourishing Lives, Empowering Futures",
+      // duration: "2:45",
     },
     {
-      image: "/images/stories/women.jpg",
-      category: "Women Empowerment",
-      title: "Empowering Women, Empowering Communities",
-      duration: "2:10",
-      href: "/stories/women-empowerment",
+      image: "/images/stories/imp-2.png",
+      video: "https://res.cloudinary.com/syjslih0/video/upload/v1794755206/VID_20261107_090722_257_bsl.mp4",
+      category: "Livelihood",
+      title: "Feeding Hope, Growing Dreams",
+      // duration: "2:10",
     },
-    {
-      image: "/images/stories/health.jpg",
-      category: "Healthcare",
-      title: "Healthcare at the Last Mile",
-      duration: "2:30",
-      href: "/stories/healthcare",
-    },
-    {
-      image: "/images/stories/disaster.jpg",
-      category: "Community Resilience",
-      title: "Hope in Times of Crisis",
-      duration: "2:55",
-      href: "/stories/community-resilience",
-    },
+    // {
+    //   image: "/images/stories/health.jpg",
+    //   video: "https://res.cloudinary.com/your-cloud-name/video/upload/healthcare.mp4",
+    //   category: "Healthcare",
+    //   title: "Healthcare at the Last Mile",
+    //   duration: "2:30",
+    // },
+    // {
+    //   image: "/images/stories/disaster.jpg",
+    //   video: "https://res.cloudinary.com/your-cloud-name/video/upload/community-resilience.mp4",
+    //   category: "Community Resilience",
+    //   title: "Hope in Times of Crisis",
+    //   duration: "2:55",
+    // },
   ];
+
+  // Close on Esc + lock page scroll while the player is open
+  useEffect(() => {
+    if (!activeStory) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setActiveStory(null);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [activeStory]);
 
   return (
     <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
@@ -226,14 +248,18 @@ function ImpactStories() {
           "
         >
 
-          {stories.map((story, index) => (
-            <a
+          {stories.map((story) => (
+            <button
+              type="button"
               key={story.title}
-              href={story.href}
+              onClick={() => setActiveStory(story)}
               className="
                 group
                 relative
+                block
+                w-full
                 overflow-hidden
+                text-left
 
                 rounded-2xl
                 bg-brand-navy
@@ -249,7 +275,7 @@ function ImpactStories() {
             >
 
               {/* =================================================
-                  IMAGE
+                  VIDEO
               ================================================= */}
 
               <div
@@ -262,10 +288,14 @@ function ImpactStories() {
                 "
               >
 
-                <img
-                  src={story.image}
-                  alt={story.title}
+                <video
+                  src={story.video}
+                  poster={story.image}
+                  preload="metadata"
+                  muted
+                  playsInline
                   className="
+                    pointer-events-none
                     h-full
                     w-full
                     object-cover
@@ -400,7 +430,7 @@ function ImpactStories() {
 
 
                 {/* =================================================
-                    TEXT OVER IMAGE
+                    TEXT OVER VIDEO
                 ================================================= */}
 
                 <div
@@ -434,50 +464,146 @@ function ImpactStories() {
                     {story.title}
                   </h3>
 
-
-                  <div
-                    className="
-                      mt-3
-                      flex
-                      items-center
-                      gap-2
-
-                      text-[10px]
-                      font-semibold
-                      uppercase
-                      tracking-[0.12em]
-                      text-white/60
-
-                      transition-colors
-                      duration-300
-
-                      group-hover:text-brand-orange-light
-                    "
-                  >
-                    Watch Story
-
-                    <ArrowRight
-                      size={13}
-                      className="
-                        transition-transform
-                        duration-300
-
-                        group-hover:translate-x-1
-                      "
-                    />
-
-                  </div>
-
                 </div>
 
               </div>
 
-            </a>
+            </button>
           ))}
 
         </div>
 
       </div>
+
+
+      {/* =================================================
+          VIDEO POPUP PLAYER
+      ================================================= */}
+
+      {activeStory && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={activeStory.title}
+          onClick={() => setActiveStory(null)}
+          className="
+            fixed
+            inset-0
+            z-[100]
+
+            flex
+            items-center
+            justify-center
+
+            bg-black/85
+            p-4
+
+            backdrop-blur-sm
+
+            sm:p-8
+          "
+        >
+
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="
+              relative
+              w-full
+              max-w-[1100px]
+            "
+          >
+
+            {/* CLOSE BUTTON */}
+
+            <button
+              type="button"
+              onClick={() => setActiveStory(null)}
+              aria-label="Close video"
+              className="
+                absolute
+                -top-12
+                right-0
+
+                flex
+                h-10
+                w-10
+                items-center
+                justify-center
+
+                rounded-full
+                bg-white/10
+                text-white
+
+                transition-colors
+                duration-300
+
+                hover:bg-brand-orange
+              "
+            >
+              <X size={20} />
+            </button>
+
+
+            {/* PLAYER */}
+
+            <div className="overflow-hidden rounded-2xl bg-black shadow-2xl">
+
+              <video
+                key={activeStory.video}
+                src={activeStory.video}
+                poster={activeStory.image}
+                controls
+                autoPlay
+                playsInline
+                className="
+                  aspect-video
+                  max-h-[80vh]
+                  w-full
+                  bg-black
+                "
+              />
+
+            </div>
+
+
+            {/* TITLE */}
+
+            <div className="mt-4">
+
+              <p
+                className="
+                  text-[10px]
+                  font-semibold
+                  uppercase
+                  tracking-[0.12em]
+                  text-brand-orange-light
+
+                  sm:text-xs
+                "
+              >
+                {activeStory.category}
+              </p>
+
+              <h3
+                className="
+                  mt-1
+
+                  text-lg
+                  font-bold
+                  text-white
+
+                  sm:text-2xl
+                "
+              >
+                {activeStory.title}
+              </h3>
+
+            </div>
+
+          </div>
+
+        </div>
+      )}
 
     </section>
   );

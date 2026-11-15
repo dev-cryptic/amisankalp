@@ -665,7 +665,7 @@ function index() {
             description="Improving access to healthcare and supporting healthier, more resilient communities."
             iconColor="text-brand-teal"
             arrowColor="bg-brand-teal"
-            backgroundImage="/images/programmes/health.jpg"
+            backgroundImage="/images/programmes/health.jpeg"
             gradient="from-brand-teal/95 via-brand-teal/65"
             href="/programmes/health"
           />
@@ -676,7 +676,7 @@ function index() {
             description="Building skills, opportunities and sustainable income pathways for individuals and families."
             iconColor="text-brand-orange"
             arrowColor="bg-brand-orange"
-            backgroundImage="/images/programmes/livelihood.jpg"
+            backgroundImage="/images/programmes/livelihood.jpeg"
             gradient="from-brand-orange/95 via-brand-orange/65"
             href="/programmes/livelihood"
           />

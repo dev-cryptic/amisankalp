@@ -197,7 +197,7 @@ function Health() {
             >
 
               <img
-                src="/images/programmes/health-story.jpg"
+                src="/images/our-programme/healthcare.png"
                 alt="Healthcare support in the community"
                 loading="lazy"
                 className="

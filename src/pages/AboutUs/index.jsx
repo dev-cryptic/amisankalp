@@ -924,7 +924,7 @@ title="About Us"
       <LeaderCard
         name="Amit"
         // role="Founder & CEO"
-        image="/images/leadership/amit.jpg"
+        image="/images/about-us/leadership/amit.png"
         linkedin="https://www.linkedin.com/in/amit-kumar-71a7ba1ab/"
         email="mailto:Panghalamit000@gmail.com"
       />
@@ -933,7 +933,7 @@ title="About Us"
       <LeaderCard
         name="Amarjeet "
         // role="Co-founder & Director"
-        image="/images/leadership/amarjeet.jpg"
+        image="/images/about-us/leadership/amarjeet.png"
         linkedin="https://www.linkedin.com/in/amarjeet-nehra-383874282/"
         email="mailto:nehraamarjeet188@gmail.com"
       />

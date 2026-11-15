@@ -183,7 +183,7 @@ function Education() {
             >
 
               <img
-                src="/images/programmes/education-story.jpg"
+                src="/images/our-programme/education.png"
                 alt="Children learning together"
                 loading="lazy"
                 className="
