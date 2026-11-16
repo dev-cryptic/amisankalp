@@ -942,7 +942,7 @@ title="About Us"
       <LeaderCard
         name="Anubhuti"
         // role="Chief Operating Officer"
-        image="/images/leadership/anubhuti.jpg"
+        image="/images/about-us/leadership/anubhuti.jpeg"
         linkedin="https://www.linkedin.com/in/anubhuti-jain-040215222/"
         email="mailto:janubhuti1@gmail.com"
       />
