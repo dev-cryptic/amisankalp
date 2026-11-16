@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HeartHandshake, CheckCircle2, Loader2 } from "lucide-react";
+import { HeartHandshake, CheckCircle2, Loader2, Download } from "lucide-react";
 
 // Vite: VITE_API_URL   |   Create React App: change to process.env.REACT_APP_API_URL
 const API = (import.meta.env.VITE_API_URL || "http://localhost:5000").replace(/\/+$/, "");
@@ -35,6 +35,8 @@ export default function Donate() {
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState(null); // { type: 'success' | 'error', text }
+  const [paidId, setPaidId] = useState(null); // set only after a confirmed payment
+  const [downloading, setDownloading] = useState(false);
 
   // Ask the server to confirm. Retry a few times in case Razorpay is still capturing.
   const confirmPayment = async (paymentId) => {
@@ -51,9 +53,32 @@ export default function Donate() {
     return false;
   };
 
+  const downloadCertificate = async () => {
+    if (!paidId) return;
+    setDownloading(true);
+    try {
+      const res = await fetch(`${API}/api/certificates/${paidId}`);
+      if (!res.ok) throw new Error("Could not create your certificate. Please try again.");
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `Amisankalp-Certificate-${paidId}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      setMessage({ type: "error", text: err.message });
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   const handleDonate = async (e) => {
     e.preventDefault();
     setMessage(null);
+    setPaidId(null);
 
     if (!(Number(amount) >= 1)) return setMessage({ type: "error", text: "Enter a valid amount." });
 
@@ -84,6 +109,7 @@ export default function Donate() {
         handler: async (r) => {
           const ok = await confirmPayment(r.razorpay_payment_id);
           if (ok) {
+            setPaidId(r.razorpay_payment_id);
             setMessage({ type: "success", text: "Payment successful. Thank you for your support!" });
           } else {
             setMessage({
@@ -212,6 +238,18 @@ export default function Donate() {
                 {message.type === "success" && <CheckCircle2 size={18} className="mt-0.5 shrink-0" />}
                 {message.text}
               </p>
+            )}
+
+            {paidId && (
+              <button
+                type="button"
+                onClick={downloadCertificate}
+                disabled={downloading}
+                className="mt-3 flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-brand-navy text-sm font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {downloading ? <Loader2 size={18} className="animate-spin" /> : <Download size={18} />}
+                {downloading ? "Preparing certificate..." : "Download Certificate"}
+              </button>
             )}
           </div>
         </form>
