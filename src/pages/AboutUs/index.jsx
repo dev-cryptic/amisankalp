@@ -940,7 +940,7 @@ title="About Us"
 
 
       <LeaderCard
-        name="Anubhuti"
+        name="Anubhuti Jain"
         // role="Chief Operating Officer"
         image="/images/about-us/leadership/anubhuti.jpeg"
         linkedin="https://www.linkedin.com/in/anubhuti-jain-040215222/"
@@ -949,7 +949,7 @@ title="About Us"
 
 
       <LeaderCard
-        name="Aashish hooda"
+        name="Aashish Hooda"
         // role="Chief Program Officer"
         image="/images/leadership/aashish.jpg"
         linkedin="https://www.linkedin.com/in/ashish-hooda-b88265229/"

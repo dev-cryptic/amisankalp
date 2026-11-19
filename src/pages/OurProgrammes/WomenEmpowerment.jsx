@@ -204,7 +204,7 @@ function WomenEmpowerment() {
             >
 
               <img
-                src="/images/programmes/women-empowerment-story.jpg"
+                src="\public\images\programmes\Women_Empowerment\Women_Community.png"
                 alt="Women participating in a community empowerment initiative"
                 loading="lazy"
                 className="
@@ -602,7 +602,7 @@ function WomenEmpowerment() {
           >
 
             <WomenCard
-              image="/images/programmes/women-skills.jpg"
+              image="\public\images\programmes\Women_Empowerment\Skills_Development.png"
               icon={<GraduationCap size={22} />}
               title="Skills Development"
               description="
@@ -615,7 +615,7 @@ function WomenEmpowerment() {
 
 
             <WomenCard
-              image="/images/programmes/women-livelihood.jpg"
+              image="\public\images\programmes\Women_Empowerment\Livelihood_Opportunities.png"
               icon={<BriefcaseBusiness size={22} />}
               title="Livelihood Opportunities"
               description="
@@ -628,7 +628,7 @@ function WomenEmpowerment() {
 
 
             <WomenCard
-              image="/images/programmes/women-entrepreneurship.jpg"
+              image="\images\programmes\Women_Empowerment\Entrepreneurship.png"
               icon={<Store size={22} />}
               title="Entrepreneurship"
               description="
@@ -641,7 +641,7 @@ function WomenEmpowerment() {
 
 
             <WomenCard
-              image="/images/programmes/women-awareness.jpg"
+              image="\images\programmes\Women_Empowerment\Awareness_Participation.png"
               icon={<ShieldCheck size={22} />}
               title="Awareness & Participation"
               description="
@@ -720,7 +720,7 @@ function WomenEmpowerment() {
             >
 
               <img
-                src="/images/programmes/women-community.jpg"
+                src="\images\programmes\Women_Empowerment\Learn_Build_Lead.png"
                 alt="Women participating in a community programme"
                 loading="lazy"
                 className="

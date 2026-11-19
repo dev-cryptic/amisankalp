@@ -203,7 +203,7 @@ function Trees() {
             >
 
               <img
-                src="/images/programmes/trees-story.jpg"
+                src="\images\programmes\Tree_Plantation\Green_Spaces.jpg"
                 alt="Tree plantation and environmental restoration"
                 loading="lazy"
                 className="
@@ -603,7 +603,7 @@ function Trees() {
           >
 
             <TreeCard
-              image="/images/programmes/tree-plantation.jpg"
+              image="\images\programmes\Tree_Plantation\Tree_Plantation.jpg"
               icon={<TreePine size={22} />}
               title="Tree Plantation"
               description="
@@ -615,7 +615,7 @@ function Trees() {
 
 
             <TreeCard
-              image="/images/programmes/community-plantation.jpg"
+              image="\images\programmes\Tree_Plantation\Community_Participation.jpg"
               icon={<Users size={22} />}
               title="Community Participation"
               description="
@@ -627,7 +627,7 @@ function Trees() {
 
 
             <TreeCard
-              image="/images/programmes/green-awareness.jpg"
+              image="\images\programmes\Tree_Plantation\Environmental_Awareness.jpg"
               icon={<Leaf size={22} />}
               title="Environmental Awareness"
               description="
@@ -640,7 +640,7 @@ function Trees() {
 
 
             <TreeCard
-              image="/images/programmes/tree-care.jpg"
+              image="\images\programmes\Tree_Plantation\Tree_Care.jpg"
               icon={<Droplets size={22} />}
               title="Tree Care"
               description="
@@ -816,7 +816,7 @@ function Trees() {
             >
 
               <img
-                src="/images/programmes/trees-community.jpg"
+                src="\images\programmes\Tree_Plantation\Community_Action.jpg"
                 alt="Community members participating in tree plantation"
                 loading="lazy"
                 className="

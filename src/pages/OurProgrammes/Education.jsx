@@ -578,7 +578,7 @@ function Education() {
           >
 
             <EducationCard
-              image="/images/programmes/education-school.jpg"
+              image="\images\programmes\Education_Initiatives\School_Support.png"
               icon={<School size={22} />}
               title="School Support"
               description="
@@ -590,7 +590,7 @@ function Education() {
 
 
             <EducationCard
-              image="/images/programmes/education-digital.jpg"
+              image="/images\programmes\Education_Initiatives\Digital_Learning.png"
               icon={<Laptop size={22} />}
               title="Digital Learning"
               description="
@@ -602,7 +602,7 @@ function Education() {
 
 
             <EducationCard
-              image="/images/programmes/education-scholarship.jpg"
+              image="\public\images\programmes\Education_Initiatives\Scholarships.png"
               icon={<GraduationCap size={22} />}
               title="Scholarships"
               description="
@@ -614,7 +614,7 @@ function Education() {
 
 
             <EducationCard
-              image="/images/programmes/education-skills.jpg"
+              image="\public\images\programmes\Education_Initiatives\Skill_Development.png"
               icon={<Sparkles size={22} />}
               title="Skill Development"
               description="
@@ -787,7 +787,7 @@ function Education() {
             >
 
               <img
-                src="/images/programmes/education-learning.jpg"
+                src="\images\programmes\Education_Initiatives\Indian Schoolchildren Sharing a Book.png"
                 alt="Students learning together"
                 loading="lazy"
                 className="
