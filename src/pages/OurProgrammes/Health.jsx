@@ -592,7 +592,7 @@ function Health() {
           >
 
             <HealthCard
-              image="\public\images\programmes\Health_Initiatives\Health_Camps.png"
+              image="\images\programmes\Health_Initiatives\Health_Camps.png"
               icon={<Stethoscope size={22} />}
               title="Health Camps"
               description="
@@ -616,7 +616,7 @@ function Health() {
 
 
             <HealthCard
-              image="\public\images\programmes\Health_Initiatives\Nutrition_Support.png"
+              image="\images\programmes\Health_Initiatives\Nutrition_Support.png"
               icon={<Activity size={22} />}
               title="Nutrition Support"
               description="
@@ -628,7 +628,7 @@ function Health() {
 
 
             <HealthCard
-              image="\public\images\programmes\Health_Initiatives\Sanitation_Hygiene.png"
+              image="\images\programmes\Health_Initiatives\Sanitation_Hygiene.png"
               icon={<ShieldCheck size={22} />}
               title="Sanitation & Hygiene"
               description="

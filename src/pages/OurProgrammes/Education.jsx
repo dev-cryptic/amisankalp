@@ -602,7 +602,7 @@ function Education() {
 
 
             <EducationCard
-              image="\public\images\programmes\Education_Initiatives\Scholarships.png"
+              image="\images\programmes\Education_Initiatives\Scholarships.png"
               icon={<GraduationCap size={22} />}
               title="Scholarships"
               description="
@@ -614,7 +614,7 @@ function Education() {
 
 
             <EducationCard
-              image="\public\images\programmes\Education_Initiatives\Skill_Development.png"
+              image="\images\programmes\Education_Initiatives\Skill_Development.png"
               icon={<Sparkles size={22} />}
               title="Skill Development"
               description="

@@ -603,7 +603,7 @@ function Livelihood() {
           >
 
             <LivelihoodCard
-              image="\public\images\programmes\Livelihood_Initiatives\Skill_Training.png"
+              image="\images\programmes\Livelihood_Initiatives\Skill_Training.png"
               icon={<BriefcaseBusiness size={22} />}
               title="Skill Training"
               description="
@@ -616,7 +616,7 @@ function Livelihood() {
 
 
             <LivelihoodCard
-              image="\public\images\programmes\Livelihood_Initiatives\Entrepreneurship.png"
+              image="\images\programmes\Livelihood_Initiatives\Entrepreneurship.png"
               icon={<Lightbulb size={22} />}
               title="Entrepreneurship"
               description="
@@ -629,7 +629,7 @@ function Livelihood() {
 
 
             <LivelihoodCard
-              image="\public\images\programmes\Livelihood_Initiatives\Financial_Inclusion.png"
+              image="\images\programmes\Livelihood_Initiatives\Financial_Inclusion.png"
               icon={<HandCoins size={22} />}
               title="Financial Inclusion"
               description="
@@ -642,7 +642,7 @@ function Livelihood() {
 
 
             <LivelihoodCard
-              image="\public\images\programmes\Livelihood_Initiatives\Market_Linkages.png"
+              image="\images\programmes\Livelihood_Initiatives\Market_Linkages.png"
               icon={<Store size={22} />}
               title="Market Linkages"
               description="
@@ -818,7 +818,7 @@ function Livelihood() {
             >
 
               <img
-                src="\public\images\programmes\Livelihood_Initiatives\Community_Approach.png"
+                src="\images\programmes\Livelihood_Initiatives\Community_Approach.png"
                 alt="Community members working together"
                 loading="lazy"
                 className="

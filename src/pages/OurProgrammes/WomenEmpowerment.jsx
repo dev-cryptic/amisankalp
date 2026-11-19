@@ -204,7 +204,7 @@ function WomenEmpowerment() {
             >
 
               <img
-                src="\public\images\programmes\Women_Empowerment\Women_Community.png"
+                src="\images\programmes\Women_Empowerment\Women_Community.png"
                 alt="Women participating in a community empowerment initiative"
                 loading="lazy"
                 className="
@@ -602,7 +602,7 @@ function WomenEmpowerment() {
           >
 
             <WomenCard
-              image="\public\images\programmes\Women_Empowerment\Skills_Development.png"
+              image="\images\programmes\Women_Empowerment\Skills_Development.png"
               icon={<GraduationCap size={22} />}
               title="Skills Development"
               description="
@@ -615,7 +615,7 @@ function WomenEmpowerment() {
 
 
             <WomenCard
-              image="\public\images\programmes\Women_Empowerment\Livelihood_Opportunities.png"
+              image="\images\programmes\Women_Empowerment\Livelihood_Opportunities.png"
               icon={<BriefcaseBusiness size={22} />}
               title="Livelihood Opportunities"
               description="
